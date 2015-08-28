@@ -1,0 +1,368 @@
+li{
+	display: inline;
+	padding: 0.5rem;
+	letter-spacing: 0.2rem;
+	line-height: 2rem;
+}
+ul{
+	width: 40%;
+	background: black;
+	text-align: center;
+	margin: auto;
+	padding-left: 0;
+
+}
+nav{
+	position: fixed; z-index: 99999;
+	background-color: black;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	trantition: color 0.5s;
+}
+a:hover{
+	color: #ffd700;
+}
+.hamburger{
+	display: none;
+}
+
+body{
+	background-image: url("restimg/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	font-family: 'lato', sans-serif;
+}
+.pages{
+	padding-top: 5rem;
+}
+
+
+div{
+	margin: 5% auto;
+	background: rgba(0,0,0, .4); 
+	padding: 3%;
+	width: 40%;
+
+}
+
+h1,h2,table{
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: 'lato', sans-serif;
+	font-weight: 100;
+}
+h2{
+	font-size: 1rem;
+	margin-top: 0;
+}
+
+p{
+	letter-spacing: 0.1rem;
+	text-align: center;
+	line-height: 1.5rem;
+	margin: 2rem;
+
+}
+.italic{
+	font-style: italic;
+}
+
+.onlinebooking{
+	margin: 3rem auto;
+	width: 70%;
+}
+.onlinebooking p{
+	text-align: left;
+}
+
+.structure, .inner, .instructions{
+	display: inline-block;
+	margin: 1%;
+	padding: 0;
+	background: none;
+}
+.instructions, .structure{
+	vertical-align: top;
+}
+.instructions{
+	width: 90%;
+	margin: 5%;
+}
+
+.structure{
+	width: 45%;
+}
+.structure p{
+	margin: 1%;
+	font-size: 14px;
+	background: none;
+}
+.inner{
+	width: 46%;
+}
+.norm-form{
+	width: 96%;
+}
+.norm-form,.button{
+	display: inline-block;
+	margin: 1% 1% 4% 0;
+	padding: 0;
+	background: none;
+
+}
+
+input{
+	width: 98%;
+	height: 27px;
+	border-radius: 5px;
+}
+label{
+	font-size: 10px;
+	padding-left: 1%;
+}
+input[type="email"], input[type="text"], input[type="tel"], input[type="date"]{
+	color:black;
+	padding-left: 3%;
+}
+
+.norm-form-label{
+	font-size: 14px;
+}
+
+.button{
+	width: auto;
+	text-align: center;
+	margin: 10% auto;
+	width: 55%;
+	color: white;
+	font-size: 15px;
+	display: block;
+
+}
+
+.button input{
+	border: 2px solid red;
+	background-color: black;
+	cursor:pointer;
+	-webkit-transition: background-color 0.5s;
+	-mox-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+.button:hover{
+	color: white;
+}
+.button input:hover{
+	background-color: red;
+}
+
+
+legend{
+	text-align: center;
+	text-transform: uppercase;
+}
+span{
+	font-weight: 100;
+	line-height: 35px;
+}
+.instructions p{
+	margin-bottom: 30px;
+}
+
+.site-content {
+
+}
+.site-footer {
+}
+
+.menu-section{
+	padding: 2%;
+	margin: auto;
+	width: 70%;
+}
+div.toggler { 
+	background:none; 
+	cursor:pointer; 
+	padding: 1% 0% 2% 2%;
+	margin: 0;
+	width: 30%;
+	display: inline-block;
+
+}
+.toggler h2:hover{
+	color: red;
+}
+div.toggler div { 
+	display:none; 
+	margin: none;
+	padding: 0;
+	background: none;
+	width: 100%;
+	line-height: 1.3rem; 
+}
+
+table {
+    counter-reset: rowNumber;
+    font-size: 0.7rem;   
+    text-align: left;
+}
+
+table tr {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1rem;
+    margin-right: 0.5em;
+
+}
+
+table tr td:last-child{
+    min-width: 1em;
+    padding-left: 2em;
+    vertical-align: bottom;
+}
+
+
+/*Mobile*/
+
+
+@media only screen and (max-width: 500px){
+	body{
+		width: 100%;
+		background-size: 100%;
+		background-position: bottom;
+		background-color: #C1C1C1;
+	}
+	div{
+		width: 95%;
+		background: rgba(0,0,0, .4); 
+		padding: .5rem;
+		font-size: .8rem;
+		margin: 25% 0;
+	}
+	.hamburger{
+		width: 10%;
+		min-width: 40px;
+		float: right;
+		display: block;
+		margin: 5%;
+	}
+
+	.onlinebooking{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.structure{
+		width: 95%;
+	}
+	#name{
+		width: 65%;
+	}
+	#surname{
+		width: 65%;
+	}
+	.menu-section{
+		width: 96%;
+		margin: 0;
+	}
+	.inner{
+		width: 100%;
+		float: none;
+	}
+	div.toggler{
+		width: 100%;
+	}
+	ul{
+		width: 40%;
+		background: rgba(0,0,0,0);
+		text-align: center;
+		padding-left: 0;
+		text-align: center;
+	}
+	nav{
+		position: fixed; z-index: 99999;
+		background-color: rgba(0,0,0,0.75);
+		width: 100%;
+		margin: 0;
+
+	}
+	li{
+	padding: 0px;
+	display: none;
+	}
+	.pages{
+		padding-top: 130px;
+	}
+}
+/*	}
+	.special{
+		display: hide;
+	}*/
+
+
+@media only screen and (max-width: 800px){
+	body{
+		width: 100%;
+		background-size: 100%;
+		background-color: #C1C1C1;
+		background-position: bottom;
+	}
+	div{
+		width: 70%;
+		background: rgba(0,0,0, .4); 
+		padding: .8rem;
+		font-size: .7rem;
+		margin: 0 auto;
+	}
+	li{
+		display: none;
+	}
+	.hamburger{
+		max-width: 4rem;
+		float: right;
+		display: block;
+		margin: ;
+	}
+	nav{
+		background-color: rgba(0,0,0,0);
+	}
+	.instructions p{
+		font-size: 0.8rem;
+	}
+}
+
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
