@@ -28,12 +28,9 @@ a{
 a:hover{
 	color: #ffd700;
 }
-.hamburger{
-	display: none;
-}
 
 body{
-	background-image: url("restimg/background.jpg");
+	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
@@ -186,6 +183,7 @@ span{
 	padding: 2%;
 	margin: auto;
 	width: 70%;
+	margin-bottom: 5rem;
 }
 div.toggler { 
 	background:none; 
@@ -249,14 +247,33 @@ table tr td:last-child{
 		font-size: .8rem;
 		margin: 25% 0;
 	}
-	.hamburger{
-		width: 10%;
-		min-width: 40px;
-		float: right;
-		display: block;
-		margin: 5%;
-	}
 
+	.nav-icon,
+	.nav-icon:before,
+	.nav-icon:after {
+	content:"";
+	position:absolute;
+	right:1em;
+	width:2em;
+	height:2em;
+	border-top:0.25em solid black;
+	}
+	.nav-icon {
+		display:none;
+		top:0.75em;
+		margin-top: 1em;
+	}
+	@media screen and (max-width: 640px) {
+	.nav-icon { display:block; }
+	}
+	.nav-icon:before {
+		top:0.25em;
+		right:0;
+	}
+	.nav-icon:after {
+		top:0.75em;
+		right:0;
+	
 	.onlinebooking{
 		width: 95%;
 		margin: 0 auto;
@@ -323,14 +340,8 @@ table tr td:last-child{
 		font-size: .7rem;
 		margin: 0 auto;
 	}
-	li{
+	ul{
 		display: none;
-	}
-	.hamburger{
-		max-width: 4rem;
-		float: right;
-		display: block;
-		margin: ;
 	}
 	nav{
 		background-color: rgba(0,0,0,0);
@@ -339,6 +350,8 @@ table tr td:last-child{
 		font-size: 0.8rem;
 	}
 }
+
+
 
 /******************************************
 /* HELPER CLASSES

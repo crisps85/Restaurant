@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	/* This code is executed after the DOM has been completely loaded */
 	
-	$('nav a,footer a.up').click(function(e){
+	$('nav li a,footer a.up').click(function(e){
 										  
 		// If a link has been clicked, scroll the page to the link's hash target:
 		
@@ -16,3 +16,4 @@ $(function() {
         $(this).find('div').slideToggle();
     });
 });
+
