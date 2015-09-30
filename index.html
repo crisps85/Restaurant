@@ -10,6 +10,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,100italic' rel='stylesheet' type='text/css'>
 
 
+
 	<title>Happy House</title>
 </head>
 
@@ -18,10 +19,10 @@
 <nav class="site-nav">
 	<ul>
 		<li><a href="#home">HOME</a></li>
-		<li><a href="#booking">ONLINE BOOKING</a></li>
+		<li><a href="#booking">ONLINE&nbsp;BOOKING</a></li>
 		<li><a href="#menu">MENU </a></li>
-		<li><a href="#">GALLERY </a></li>
-		<li><a href="#">CONTACT&nbsp;US</a></li>
+		<li><a href="#gallery">GALLERY </a></li>
+		<li><a href="#contact-us">CONTACT&nbsp;US</a></li>
 	</ul>
 	<a class="nav-icon" href="#"></a>
 </nav>
@@ -329,12 +330,69 @@
 		</div>
 	</section>
 	</div>
+
+	<section id="gallery" class="pages">
+
+		<div>
+			<h1>Gallery</h1>
+			<br>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sweetnsourpork_b.jpg" title="Sweet and Sour Pork">
+			<img src="images/sweetnsourpork_s.jpg" alt="" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/chick-chow-mein.jpg" title="Chicken Chow Mein">
+			<img src="images/chick-chow-mein_s.jpg" alt="" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/soft-shell-crab_b.jpg" title="Soft Shell Crab">
+			<img src="images/soft-shell-crab_s.jpg" alt="Soft Shell Crab" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8591/16141566979_347348e72c_b.jpg" title="cold forest (picturesbywalther)">
+			<img src="http://farm9.staticflickr.com/8591/16141566979_347348e72c_m.jpg" alt="" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sweetnsourpork_b.jpg" title="Sweet and Sour Pork">
+			<img src="images/sweetnsourpork_s.jpg" alt="" />
+			</a>
+		</div>
+	</section>	
+
+	<section id="contact-us" class="pages">
+		<div>test2
+		</div>
+	</section>
+
 		<script src="toggler.js"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
         <script src="js/jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
         <script src="js/script.js"></script>
 
+		        <!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+		
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" 		media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+		
+		<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" 		media="screen" />
+		<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		
+
 				<script src="js/main.js"></script>
+
+
+
+
+				<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
 </body>
 </html>

@@ -7,6 +7,10 @@ $(document).ready(function(){
 	$('.nav-icon').on('click', function(){
 		$('.site-nav ul').slideToggle();
 	});
+	// when click on nav-icon don't scroll to top by default
+	$('.nav-icon').click(function(e){
+		e.preventDefault();
+	});
 
 	//when i resize the window large
 	//show the menu and hide the icon
@@ -23,6 +27,22 @@ $(document).ready(function(){
 			$('.site-nav ul').hide();
 		}
 
+	});
+});
+
+$(document).ready(function() {
+	$(".fancybox-thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
 	});
 });
 
