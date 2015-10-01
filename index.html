@@ -27,7 +27,7 @@
 	<a class="nav-icon" href="#"></a>
 </nav>
 
-<section id="home" class="pages"> 
+<section id="home" class="pages" data-sr> 
 <div><h1>HAPPY HOUSE</h1>
 
 <hr>
@@ -36,7 +36,7 @@
 <h2><a href="https://www.google.co.uk/maps/place/Happy+House/@51.4848628,0.3359886,15z/data=!4m2!3m1!1s0x0:0x520ea0474af77e91?sa=X&ved=0CH8Q_BIwC2oVChMIiMfA-tHaxgIVTf6ACh0CUAeo">53A SOUTHEND ROAD, GRAYS, ESSEX RM17 5NJ</a></h2>
 
 <hr>
-<p>Happy House in Grays is a Chinese restaurant offering some of the very best meat, fish and vegetable dishes. We have become famous for offering the freshest Chinese dishes, simply cooked; we believe that the finest products speak for themsleves. The restaurant  is on Southend Road and offers a nice stroll through Grays. A full a la carte menu is available from Monday-Sunday. </p>
+<p data-sr>Happy House in Grays is a Chinese restaurant offering some of the very best meat, fish and vegetable dishes. We have become famous for offering the freshest Chinese dishes, simply cooked; we believe that the finest products speak for themsleves. The restaurant  is on Southend Road and offers a nice stroll through Grays. A full a la carte menu is available from Monday-Sunday. </p>
 
 </div></section>
 <section id="booking" class="pages"> 
@@ -46,14 +46,14 @@
 
 <h2>Online Reservation</a></h2>
 <hr>
-<p>If you would like to make a reservation at the restaurant please complete the booking form. </p>
+<p data-sr>If you would like to make a reservation at the restaurant please complete the booking form. </p>
 
-<p class="italic">If you would like to make a reservation for today, please call the restaurant on 01375 381 592.</p>
+<p data-sr class="italic">If you would like to make a reservation for today, please call the restaurant on 01375 381 592.</p>
 
-<p class="italic">All reservations made via our online booking system through this booking form will receive email confirmations within 24 hours. If you have not received this you should contact the restaurant to ensure your booking has been received</p>
+<p data-sr class="italic">All reservations made via our online booking system through this booking form will receive email confirmations within 24 hours. If you have not received this you should contact the restaurant to ensure your booking has been received</p>
 
 <hr>
-<div class="structure"><p>Name*</p>
+<div data-sr class="structure"><p>Name*</p>
 	<form action="#" method="post" enctype="text/plain">
 		<div class="inner">
     		<input type="text" id="name" maxlength="15" placeholder="First" required>
@@ -93,7 +93,7 @@
 		</div>
 	</form>
 </div>
-	<div class="structure clearfix">
+	<div data-sr class="structure clearfix">
 		<fieldset>
 			<legend>Opening Hours</legend>
 			<p>Monday to Sunday:</p>
@@ -115,7 +115,7 @@
 	</div>
 
 </div></section>
-	<div class="menu-section" section id="menu" class="pages"><H1>Menu</h1>
+	<div class="menu-section" section id="menu" class="pages" data-sr><H1>Menu</h1>
 		<div class="toggler">
 		<h2>Appetizers</h2>
     	<div class="inner">
@@ -331,25 +331,31 @@
 	</section>
 	</div>
 
-	<section id="gallery" class="pages">
+	<section id="gallery" class="pages" data-sr>
 
 		<div>
 			<h1>Gallery</h1>
 			<br>
 			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sweetnsourpork_b.jpg" title="Sweet and Sour Pork">
-			<img src="images/sweetnsourpork_s.jpg" alt="" />
+			<img src="images/sweetnsourpork_s.jpg" alt="Sweet and Sour Pork" />
 			</a>
 			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/chick-chow-mein.jpg" title="Chicken Chow Mein">
-			<img src="images/chick-chow-mein_s.jpg" alt="" />
+			<img src="images/chick-chow-mein_s.jpg" alt="Chicken Chow Mein" />
 			</a>
 			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/soft-shell-crab_b.jpg" title="Soft Shell Crab">
 			<img src="images/soft-shell-crab_s.jpg" alt="Soft Shell Crab" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8591/16141566979_347348e72c_b.jpg" title="cold forest (picturesbywalther)">
-			<img src="http://farm9.staticflickr.com/8591/16141566979_347348e72c_m.jpg" alt="" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/satay-chicken_b.jpg" title="Satay Chicken">
+			<img src="images/satay-chicken_s.jpg" alt="Satay Chicken" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sweetnsourpork_b.jpg" title="Sweet and Sour Pork">
-			<img src="images/sweetnsourpork_s.jpg" alt="" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/springrolls_b.jpg" title="Sweet and Sour Pork">
+			<img src="images/springrolls_s.jpg" alt="Crispy Spring Rolls" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/aromatic-duck_b.jpg" title="Sweet and Sour Pork">
+			<img src="images/aromatic-duck_s.jpg" alt="Crispy Spring Rolls" />
+			</a>
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/fried-rice_b.jpg" title="Fried Rice">
+			<img src="images/fried-rice_s.jpg" alt="Fried Rice" />
 			</a>
 		</div>
 	</section>	
@@ -394,5 +400,11 @@
 		$(".fancybox").fancybox();
 	});
 </script>
+	    <script src='js/scrollReveal.min.js'></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
 </body>
 </html>

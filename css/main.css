@@ -342,7 +342,7 @@ table tr td:last-child{
 	border-top:0.25em solid black;
 	}
 	.nav-icon {
-		display:block;
+		display:none;
 		top:0.75em;
 		margin-top: 1em;
 	}
@@ -353,11 +353,13 @@ table tr td:last-child{
 	div.toggler{
 		width: 100%;
 	}
-
+}
 
 @media screen and (max-width: 640px) {
-	.nav-icon { display:block; }
+	.nav-icon { 
+		display:block; 
 	}
+
 	.nav-icon:before {
 		top:0.25em;
 		right:0;
@@ -371,11 +373,7 @@ table tr td:last-child{
 	.nav-icon:after {
 		top:0.75em;
 		right:0;
-	
-	.onlinebooking{
-		width: 95%;
-		margin: 0 auto;
-	}
+		
 	.structure{
 		width: 95%;
 	}
@@ -419,15 +417,13 @@ table tr td:last-child{
 		padding-top: 130px;
 	}
 }
-/*	}
-	.special{
-		display: hide;
-	}*/
 
 
 
+/*When i put the right closing curly brackets at places on media screen things start breaking. ie. 
+click icon to reveal menu no longer works. not sure why. 
 
-
+*/
 /******************************************
 /* HELPER CLASSES
 /*******************************************/
