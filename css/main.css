@@ -266,6 +266,13 @@ table tr td:last-child{
 	width: 750px;
 	margin: 0 auto;
 }
+footer div{
+	background: rgba(0,0,0,0);
+}
+#contact-us{
+	border: 1px solid red;
+	padding-top: 5%;
+}
 
 /*Mobile*/
 
@@ -355,6 +362,7 @@ table tr td:last-child{
 	}
 }
 
+
 @media screen and (max-width: 640px) {
 	.nav-icon { 
 		display:block; 
@@ -366,6 +374,10 @@ table tr td:last-child{
 	}
 	.site-nav ul{
 		width: 75%;
+		display: none;
+	}
+	#home div{
+		margin-top: 0;
 	}
 	.site-nav{
 		background-color: rgba(0,0,0,0);

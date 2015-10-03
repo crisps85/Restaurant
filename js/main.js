@@ -28,9 +28,6 @@ $(document).ready(function(){
 		}
 
 	});
-});
-
-$(document).ready(function() {
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',
 		nextEffect	: 'none',
