@@ -27,7 +27,17 @@ body{
 /******************************************
 /* TYPOGRAPHY
 /*******************************************/
+.fancybox-next{
+	right: -150%!important;
+}
 
+.fancybox-wrap { 
+	position:fixed !important; 
+	top:20% !important;
+}
+#fancybox-thumbs.bottom{
+	bottom: 0px !important;
+}
 
 li{
 	display: inline;
@@ -270,10 +280,27 @@ footer div{
 	background: rgba(0,0,0,0);
 }
 #contact-us{
-	border: 1px solid red;
 	padding-top: 5%;
 }
 
+.container{
+	height: 720px;
+}
+
+.half{
+	float: left;
+	display: inline-block;
+	background: rgba(0,0,0,0);
+	width: 40%;
+	margin-top: 5%;
+}
+
+.half:nth-of-type(2){
+	float: right;
+}
+footer{
+	clear: both;
+}
 /*Mobile*/
 
 @media only screen and (max-width: 800px){
@@ -283,6 +310,7 @@ footer div{
 		background-color: #C1C1C1;
 		background-position: bottom;
 	}
+
 	div{
 		width: 70%;
 		background: rgba(0,0,0, .4); 
@@ -312,6 +340,11 @@ footer div{
 	div.toggler{
 		width: 100%;
 	}
+
+	.fancybox-next{
+	right: -43%!important;
+	}
+
 }
 
 
@@ -321,6 +354,13 @@ footer div{
 		background-size: 100%;
 		background-position: bottom;
 		background-color: #C1C1C1;
+	}
+
+	.fancybox-next{
+		display: none;
+	}
+	.fancybox-prev{
+		display: none;
 	}
 	div{
 		width: 95%;
@@ -368,13 +408,16 @@ footer div{
 		display:block; 
 	}
 
+	.fancybox-next{
+	right: -43%!important;
+}
 	.nav-icon:before {
 		top:0.25em;
 		right:0;
 	}
 	.site-nav ul{
 		width: 75%;
-		display: none;
+		display: block;
 	}
 	#home div{
 		margin-top: 0;
