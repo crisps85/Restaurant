@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,100italic' rel='stylesheet' type='text/css'>
 
-
-
 	<title>Happy House</title>
 </head>
 
@@ -53,39 +51,40 @@
 
 <hr>
 <div data-sr class="structure"><p>Name*</p>
-	<form action="" method="post" enctype="text/plain">
+	<form action="http://formspree.io/michellecarmen.w@gmail.com"
+      method="POST">
 		<div class="inner">
-    		<input type="text" id="name" maxlength="15" placeholder="First" required>
+    		<input type="text" id="name" name='name' maxlength="15" placeholder="First" required>
     		<label for="name">Your Name</label>
 		</div>
 		<div class="inner">
-			<input type="text" id="surname" maxlength="15" placeholder="Surname" required>
+			<input type="text" id="surname" name='surname' maxlength="15" placeholder="Surname" required>
     		<label for="surname">Surname</label>
 		</div>
 
 		<div class="norm-form clearfix">
 			<label class="norm-form-label" for="email">Email Address*</label>
-			<input type="email" id="email">
+			<input type="email" id="email" name='email'>
 		</div>
 
 		<div class="norm-form clearfix">
 			<label class="norm-form-label" for="tel">Phone Number*</label>
-			<input type="tel" id="tel">
+			<input type="tel" id="tel" name='tel'>
 		</div>
 
 		<div class="norm-form clearfix">
 			<label class="norm-form-label" for="party-size">Party Size*</label><br>
 			<label for="party-size">Please specify if you need a highchair or a table with Wheelchair access</label>
-			<input type="text" id="party-size">
+			<input type="text" id="party-size" name='party-size'>
 		</div>
 		<div class="norm-form clearfix">
 			<label class="norm-form-label" for="time">Time*</label><br>
 			<label for="party-size">Please be aware of our opening times</label>
-			<input type="text" id="time">
+			<input type="text" id="time" name='time'>
 		</div>
 		<div class="norm-form clearfix">
 			<label class="norm-form-label" for="date">Date*</label><br>
-			<input type="date" id="date">
+			<input type="date" id="date" name='date'>
 		</div>
 		<div class="clearfix button color">
 			<input type="submit" value="Book">
@@ -95,15 +94,12 @@
 	<div data-sr class="structure clearfix">
 		<fieldset>
 			<legend>Opening Hours</legend>
-			<p>Monday to Sunday:</p>
-			<span>Lunch 12 noon - 2:30pm</span>
-			<p>Monday to Sunday Dinner</p>
-			<span>6:30pm - 9pm</span>
-			<p>Friday:</p>
-			<span>Lunch 12 noon - 2:30pm<br>
-			Dinner 6:30pm - 9:30pm</span>
-			<p>Saturday:<span>12 noon - 9:45pm</span></p>
-			<p>Sunday:<span>12 noon - 9pm</span></p>
+			<p>Sunday:</p>
+			<span>Lunch 5pm - 10:30pm</span>
+			<p>Monday to Thursday</p>
+			<span>5:00pm - 11pm</span>
+			<p>Friday/Saturday:</p>
+			<span>5pm - 11:30pm<br>
 
 			<div class="instructions clearfix">
 			<p>Please fill in the online booking form or call the restaurant directly for reservations.</p>
@@ -114,7 +110,7 @@
 	</div>
 
 </div></section>
-	<div class="menu-section" section id="menu" class="pages" data-sr><H1>Menu</h1>
+	<div class="menu-section" section id="menu" class="pages" data-sr><H1>Menu<br><span class='smaller'>(take-way prices only)</span></h1>
 		<div class="toggler">
 		<h2>Appetizers</h2>
     	<div class="inner">
@@ -161,7 +157,7 @@
 
 			    <tr>
 			        <td>Sesame Prawn Toast French Style (4)</td>
-			        <td>£4.20pp</td>
+			        <td>£4.20</td>
 			    </tr>
 			    <tr>
 			        <td>Pork Ribs Cooked with Garlic in Spicy Salt</td>
@@ -204,8 +200,29 @@
 			    </tr>
 			    <tr>
 			        <td>Crispy Aromatic Duck (Served with Hoi Sin Sauce, Cucumber, Spring Onions & Pancakes</td>
-			        <td>£20</td>
+			        <td><span class='small_price'>£7.50-26</span></td>
 			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Soups<br></span>Chicken & Sweet Corn Soup</td>
+			        <td>£2.50</td>
+			    </tr>
+			    <tr>
+			        <td>Chicken Noodle Soup (Clear)</td>
+			        <td>£2.50</td>
+			    </tr>
+			    <tr>
+			        <td>Chicken & Mushroom Soup (Clear)</td>
+			        <td>£2.30</td>
+			    </tr>
+			    <tr>
+			        <td>Crab Meat & Sweet Corn Soup</td>
+			        <td>£2.50</td>
+			    </tr>
+			    <tr>
+			        <td>Hot & Sour Soup</td>
+			        <td>£2.30</td>
+			    </tr>
+
 			</table>
 
     	</div>
@@ -217,94 +234,403 @@
 
 			<table>
 			    <tr>
-			        <td>Imperial Hot Hors d'Oeuvres</td>
-			        <td>£3.95pp</td>
-			    </tr>
-			    <tr>
-			        <td>Crispy Spring Rolls</td>
-			        <td>£2.80</td>
-			    </tr>
-			    <tr>
-			        <td>Thai Style Spring Rolls</td>
-			        <td>£3.60</td>
-			    </tr>
-			    <tr>
-			        <td>Crispy Won Ton</td>
-			        <td>£3.50</td>
-			    </tr>
-			    <tr>
-			        <td>Pork Dumplings (6)</td>
+			        <td><span class='dessert_header'>Chicken Dishes<br></span>Chicken in Black Bean Sauce with Peppers (Spicy)</td>
 			        <td>£4.50</td>
 			    </tr>
 			    <tr>
-			        <td>Seaweed</td>
-			        <td>£3.00</td>
-			    </tr>
-			        <td>Satay Chicken on Skwers (4) !Contains Nuts</td>
+			        <td>Stir Fried Chicken with Mushrooms, Garlic & Onions</td>
 			        <td>£4.50</td>
 			    </tr>
 			    <tr>
-			        <td>Bang Bang Chicken Served with Spicy Peanut Sauce</td>
+			        <td>Chicken in Oyster Sauce</td>
 			        <td>£4.50</td>
 			    </tr>
 			    <tr>
-			        <td>Deep Fried Shredded Chicken</td>
-			        <td>£4.30</td>
+			        <td>Chicken Chinese Style (Served on a bed of Beansprouts in Barbeque Sauce</td>
+			        <td>£4.50</td>
 			    </tr>
 			    <tr>
-			        <td>Soft Shell Crab cooked with Garlic in Spicy Salt</td>
-			        <td>£6.50</td>
+			        <td>Szechuan Chicken with Chilli & Carrots (Spicy)</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Kung Po Chicken (Cooked in Spicy Sweet & Sour Sauce)</td>
+			        <td>£4.50</td>
+			    </tr>
+			        <td>Chicken with Cashew Nuts (or in Yellow bean Sauce)</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Sweet & Sour Chicken Hong Kong Style</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Sweet & Sour Chicken Balls (10)</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Chilli Chicken with Garlic</td>
+			        <td>£4.50</td>
 			    </tr>
 
 			    <tr>
-			        <td>Sesame Prawn Toast French Style (4)</td>
-			        <td>£4.20pp</td>
+			        <td>Grilled Chicken cooked in Wine Sauce</td>
+			        <td>£4.50</td>
 			    </tr>
 			    <tr>
-			        <td>Pork Ribs Cooked with Garlic in Spicy Salt</td>
+			        <td>Crispy Chicken in Lemon Sauce</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Duck<br></span>Roast Duck in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£6.00</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Roast Duck with Mushrooms, Garlic & Onions</td>
+			        <td>£6.00</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Duck Chinese Style (Served on a bed of Beansprouts in Barbeque Sauce</td>
+			        <td>£6.00</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Roast Duck with Pineapple</td>
+			        <td>£6.00</td>
+			    </tr>
+			        <td><span class='dessert_header'>Beef<br></span>Beef in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Beef with Mushrooms, Garlic & Onions</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Beef in Oyster Sauce</td>
+			        <td>£4.80</td>
+			    </tr>
+
+
+			    <tr>
+			        <td>Szechuan Beef Chilli & Carrots (Spicy)</td>
+			        <td>£4.80</td>
+			    </tr>
+			        <td>Kung Po Beef (Cooked in Spicy Sweet & Sour Sauce)</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Deep Fried Shredded Beef (Spicy)</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Fillet Beef with Green Peppers & Garlic</td>
+			        <td>£9.00</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Beef with Ginger & Spring Onions (Dry)</td>
+			        <td>£5.30</td>
+			    </tr>
+
+			    <tr>
+			        <td><span class='dessert_header'>Pork<br></span>Roast Pork in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Pork with Mushrooms, Garlic & Onions</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Pork in Oyster Sauce</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Pork Chinese Style (Served on a bed of Beansprouts in Barbeque Sauce)</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Sweet & Sour Pork Hong Kong Style</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>King Prawns<br></span>King Prawns in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£5.20</td>
+			    </tr>
+			        <td>King Prawns with Mushrooms, Garlic & Onions</td>
 			        <td>£5.20</td>
 			    </tr>
 			    <tr>
-			        <td>Chinese Barbeque Spare Ribs (Dry or in sauce)</td>
+			        <td>King Prawns in Oyster Sauce</td>
 			        <td>£5.20</td>
 			    </tr>
 			    <tr>
-			        <td>Peking Ribs in Cantonese Sauce</td>
+			        <td>Szechuan King Prawns Chilli & Carrots (Spicy)</td>
+			        <td>£5.20</td>
+			    </tr>
+
+			    <tr>
+			        <td>Kung Po Prawns (Cooked in Spicy Sweet & Sour Sauce)</td>
+			        <td>£5.20</td>
+			    </tr>
+			        <td>King Prawns with Cashew Nuts (or in Yellow bean Sauce)</td>
 			        <td>£5.20</td>
 			    </tr>
 			    <tr>
-			        <td>King Prawns Cooked with Garlic in Spicy Salt (4)</td>
+			        <td>Sweet & Sour King Prawns Hong Kong Style</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Deep Fried King Prawns in Light Batter (Served with Sweet & Sour Sauce)</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Chefs Special King Prawns</td>
+			        <td>£5.20</td>
+			    </tr>
+
+			    <tr>
+			        <td><span class='dessert_header'>Seafood<br></span>Fish in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Fried Fish in Light Batter cooked in Chinese Wine Sauce</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Fried Fish in Spicy Salt</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Deep Fried Squid in Light Batter (Served with Sweet & Sour Sauce</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Deep Fried Squid cooked with Garlic in Spicy Salt</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Scallops with Four Kinds of Vegetables (Spicy)</td>
+			        <td>£6.50</td>
+			    </tr>
+			        <td>Stir Fried Scallops in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£6.50</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Sizzling Dishes<br></span>Sizzling Fillet of Beef Cantonese Style</td>
+			        <td>£9.00</td>
+			    </tr>
+			    <tr>
+			        <td>Sizzling King Prawns Cantonese Style</td>
+			        <td>£5.40</td>
+			    </tr>
+			    <tr>
+			        <td>Sizzling Beef in Garlic & Onion Sauce</td>
+			        <td>£5.00</td>
+			    </tr>
+			        <td>Sizzling King Prawns in Garlic & Onion Sauce</td>
+			        <td>£5.40</td>
+			    </tr>
+			    <tr>
+			        <td>Sizzling Scallops in Garlic & Onion Sauce</td>
+			        <td>£6.70</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Curry<br></span>Special Curry (King Prawns, Chicken & Roast Pork)</td>
 			        <td>£5.00</td>
 			    </tr>
 			    <tr>
-			        <td>Satay King Prawns on Skewers (4) Contains Nuts</td>
-			        <td>£5.00</td>
+			        <td>Chicken Curry</td>
+			        <td>£4.50</td>
 			    </tr>
-			        <td>Butterfly King Prawn Cutlets in Breadcrumbs(4)</td>
+
+			    <tr>
+			        <td>Beef Curry</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Pork Curry</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>King Prawn Curry</td>
+			        <td>£5.20</td>
+			    </tr>
+			    <tr>
+			        <td>Mixed Vegetable Curry (Chinese Leaf, Carrots, Beansprouts & Mushrooms</td>
+			        <td>£3.50</td>
+			    </tr>
+			    <tr>
+			        <td>Mushroom Curry</td>
+			        <td>£3.50</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>English Dishes<br></span>Sirloin Steak served with Chips, Peas & Mushrooms</td>
+			        <td>£15.50</td>
+			    </tr>
+			        <td><span class='dessert_header'>Vegetables<br></span>Stir Fried Pak Choi with Ginger Or Oyster Sauce Or Garlic</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Choi Sum with Ginger or Oyster Sauce or Garlic</td>
+			        <td>£4.50</td>
+			    </tr>
+			    <tr>
+			        <td>Braised Four Kinds of Vegetables</td>
+			        <td>£3.60</td>
+			    </tr>
+			    <tr>
+			        <td>Braised Tofu in Chinese Wine Sauce</td>
+			        <td>£3.60</td>
+			    </tr>
+			        <td>Fried Tofu in Spicy Salt</td>
+			        <td>£3.60</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Beansprouts in Garlic & Onion Sauce</td>
+			        <td>£3.60</td>
+			    </tr>
+			    <tr>
+			        <td>Seasonal Vegetables in Oyster Sauce (Chinese Leaf)</td>
+			        <td>£3.60</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Mushrooms & Onions</td>
+			        <td>£3.60</td>
+			    </tr>
+
+			    <tr>
+			        <td>Chips</td>
+			        <td>£1.70</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Rice<br></span>Special Fried Rice (Chicken, Roast Pork, Shrimp and Peas)</td>
+			        <td>£3.80</td>
+			    </tr>
+			    <tr>
+			        <td>Shredded Chicken Fried Rice</td>
+			        <td>£3.80</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Duck Fried Rice</td>
+			        <td>£4.90</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Pork Fried Rice</td>
+			        <td>£3.80</td>
+			    </tr>
+			    <tr>
+			        <td>King Prawn Egg Fried Rice</td>
+			        <td>£4.90</td>
+			    </tr>
+			        <td>Shrimp Fried Rice</td>
+			        <td>£3.80</td>
+			    </tr>
+			    <tr>
+			        <td>Egg Fried Rice</td>
+			        <td>£2.70</td>
+			    </tr>
+			    <tr>
+			        <td>Boiled Rice</td>
+			        <td>£2.50</td>
+			    </tr>
+			    <tr>
+			        <td><span class='dessert_header'>Noodles<br></span>Special Chow Mein (Chicken, Roast Pork, Shrimp and Peas)</td>
+			        <td>£3.90</td>
+			    </tr>
+			        <td>Shredded Chicken Chow Mein</td>
+			        <td>£3.90</td>
+			    </tr>
+			    <tr>
+			        <td>Roast Duck Chow Mein</td>
 			        <td>£5.00</td>
 			    </tr>
 			    <tr>
-			        <td>Special cantonese Style King Prawns (4)</td>
+			        <td>Roast Pork Chow Mein</td>
+			        <td>£3.90</td>
+			    </tr>
+			    <tr>
+			        <td>Beef Chow Mein</td>
+			        <td>£3.90</td>
+			    </tr>
+
+			    <tr>
+			        <td>King Prawn Chow Mein</td>
 			        <td>£5.00</td>
 			    </tr>
 			    <tr>
-			        <td>Deep Fried King Prawns in Spring Onion Batter (4)</td>
-			        <td>£5.00</td>
+			        <td>Shrimp Chow Mein</td>
+			        <td>£3.90</td>
+			    </tr>
+			    <tr>
+			        <td>Plain Chow Mein</td>
+			        <td>£3.20</td>
+			    </tr>
+			    <tr>
+			        <td>Singapore Vermicelli (Chicken, Roast Pork, Shrimps & Peas) (Spicy)</td>
+			        <td>£3.90</td>
+			    </tr>
+			    <tr>
+			        <td>Singapore Chow Mein (Chicken, Roast Pork, Shrimps & Peas (Spicy)</td>
+			        <td>£3.90</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Roast Duck with Pineapple</td>
+			        <td>£6.00</td>
+			    </tr>
+			        <td>Beef in Black Bean Sauce with Peppers (Spicy)</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Stir Fried Beef with Mushrooms, Garlic & Onions</td>
+			        <td>£4.80</td>
+			    </tr>
+			    <tr>
+			        <td>Beef in Oyster Sauce</td>
+			        <td>£4.80</td>
 			    </tr>
 			</table>
+
     	</div>
 		</div>
 
 		<div class="toggler">
-		<h2>Dessert</h2>
+		<h2>Sauces & Desserts</h2>
     	<div class="inner">
 <!--     		<dl>
     			<dt></dt>
     			<dd></dd>
     		</dl> -->
+
 			<table>
 			    <tr>
-			        <td>Lychee</td>
+			        <td><span class='dessert_header'>Sauces<br></span>Barbeque Sauce</td>
+			        <td>&pound;1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Curry Sauce</td>
+			        <td>£1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Sweet & Sour Sauce</td>
+			        <td>£1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Satay Sauce</td>
+			        <td>£1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Black Bean Sauce</td>
+			        <td>£1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Peking Sauce</td>
+			        <td>£1.50</td>
+			    </tr>
+			    <tr>
+			        <td>Hoi Sin Sauce</td>
+			        <td>£2.00</td>
+			    </tr>
+
+			    <tr> 
+			        <td><span class='dessert_header'>Desserts</span> <br>Lychee</td>
 			        <td>&pound;2.20</td>
 			    </tr>
 			    <tr>
@@ -338,11 +664,11 @@
 		<div>
 			<h1>Gallery</h1>
 			<br>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/sweetnsourpork_b.jpg" title="Sweet and Sour Pork">
-			<img src="images/sweetnsourpork_s.jpg" alt="Sweet and Sour Pork" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/ribs_in_spicy_salt.jpeg" title="Ribs in Spicy Salt">
+			<img src="images/ribs_in_spicy_salt_s.jpg" alt="Ribs in spicy salt" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/chick-chow-mein.jpg" title="Chicken Chow Mein">
-			<img src="images/chick-chow-mein_s.jpg" alt="Chicken Chow Mein" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/king_prawn_chow_mein.jpeg" title="King Prawn Chow Mein">
+			<img src="images/king_prawn_chow_mein_s.jpg" alt="King Prawn Chow Mein" />
 			</a>
 			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/soft-shell-crab_b.jpg" title="Soft Shell Crab">
 			<img src="images/soft-shell-crab_s.jpg" alt="Soft Shell Crab" />
@@ -350,20 +676,20 @@
 			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/satay-chicken_b.jpg" title="Satay Chicken">
 			<img src="images/satay-chicken_s.jpg" alt="Satay Chicken" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/springrolls_b.jpg" title="Sweet and Sour Pork">
-			<img src="images/springrolls_s.jpg" alt="Crispy Spring Rolls" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/bbq_ribs_b.jpg" title="BBQ ribs in sauce">
+			<img src="images/bbq_ribs_s.jpg" alt="Barbeque Ribs" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/aromatic-duck_b.jpg" title="Crispy Spring Rolls">
-			<img src="images/aromatic-duck_s.jpg" alt="Crispy Spring Rolls" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/aromatic-duck_b.jpg" title="Peking Duck Wrap">
+			<img src="images/aromatic-duck_s.jpg" alt="Peking Duck Wrap" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/fried-rice_b.jpg" title="Fried Rice">
-			<img src="images/fried-rice_s.jpg" alt="Fried Rice" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/deep_fried_shredded_beef.jpeg" title="Deep Fried Shredded Beef">
+			<img src="images/deep_fried_shredded_beef_s.jpg" alt="Deep Fried Shredded Beef" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/ribs_b.jpeg" title="Salt Chilli Ribs">
-			<img src="images/ribs_s.jpg" alt="Salt Chilli Ribs" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/chicken_in_blackbean_sauce.jpeg" title="Chicken in black bean sauce">
+			<img src="images/chicken_in_blackbean_sauce_s.jpg" alt="Chicken in black bean sauce" />
 			</a>
-			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/prawns_b.jpg" title="Salt Chilli Prawns">
-			<img src="images/prawns_s.jpg" alt="Salt Chilli Prawns" />
+			<a class="fancybox-thumb" rel="fancybox-thumb" href="images/squid.jpg" title="Squid in spicy salt">
+			<img src="images/squid_s.jpg" alt="Squid in spicy salt" />
 			</a>
 		</div>
 	</section>	
@@ -378,7 +704,7 @@
 				53A Southend Road<br>
 				Grays<br>
 				Essex<br>
-				RM19 1LH
+				RM17 5NJ
 			</div>
 			<div class="half">
 			Tel: <a href="tel= 00441375381592">01375 381 592</a>
@@ -386,12 +712,13 @@
 		</div>
 	</section>
 	<footer> 
-		<p>&copy; 2015 Happy House Chinese Restaurant</p>
+		<p>&copy; 2015 Happy House Chinese Restaurant<br>built by 
+		<a href='Porfolio_2/index.html'>GadgetGirl.London</a></p>
 	</footer>
 
 
 
-		<script src="toggler.js"></script>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
         <script src="js/script.js"></script>

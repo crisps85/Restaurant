@@ -30,6 +30,12 @@ body{
 .fancybox-next{
 	right: -150%!important;
 }
+footer a{
+	display: inline-block;
+	text-align: center;
+	font-weight: 100;
+	font-size: 0.8rem;
+}
 
 .fancybox-wrap { 
 	position:fixed !important; 
@@ -218,7 +224,13 @@ span{
 }
 .site-footer {
 }
-
+.dessert_header{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.smaller{font-size: 1rem;}
+.small_price{line-height: 0;}
+#fancybox-thumbs{display: none}
 .menu-section{
 	padding: 2%;
 	margin: auto;
